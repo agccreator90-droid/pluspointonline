@@ -1,0 +1,22 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "settings"
+    label: "Website Settings"
+    files:
+      - label: "Site Info"
+        name: "info"
+        file: "_data/info.json"
+        fields:
+          - {label: "Notice/Offer", name: "notice", widget: "string"}
+          - {label: "Phone 1", name: "phone1", widget: "string"}
+          - {label: "Phone 2", name: "phone2", widget: "string"}
+          - {label: "WhatsApp", name: "whatsapp", widget: "string"}
+          - {label: "Address", name: "address", widget: "text"}
+          - {label: "Mon-Sat Timing", name: "timing_week", widget: "string"}
+          - {label: "Sunday Timing", name: "timing_sunday", widget: "string"}
